@@ -40,5 +40,8 @@
       "last 1 opera version",
       "last 1 samsung version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }
