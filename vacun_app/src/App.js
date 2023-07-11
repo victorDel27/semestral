@@ -31,7 +31,7 @@ export const App = () => {
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>{!data ? "Loading..." : data}</p>
         <p>{!data1 ? "Loading..." : data1}</p>} */}
-        <Navbar />
+        {/* <Navbar /> */}
         <Router>
           <Routes>
             <Route path="/" element={<Persona />} />
