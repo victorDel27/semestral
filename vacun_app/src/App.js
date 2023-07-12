@@ -1,10 +1,11 @@
 import React from "react";
-/*import logo from "./logo.svg";*/
 import "./App.css";
 import Persona from "./components/login";
 import Doctor from "./components/doctor";
-import Navbar from "./components/navbar";
+/*import Navbar from "./components/navbar";*/
 import Notfound from "./components/notfound";
+import Register from "./components/register";
+
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 export const App = () => {
@@ -24,7 +25,6 @@ export const App = () => {
       .then((data1) => setData1(data1.message));
   }, []); */
 
-
   return (
     <div className="App">
       <header className="App-header">
@@ -37,6 +37,8 @@ export const App = () => {
             <Route path="/" element={<Persona />} />
             <Route path="/doctor" element={<Doctor />} />
             <Route path="*" element={<Notfound>/</Notfound>} />
+            <Route path="/register" element={<Register />} />
+
           </Routes>
         </Router>
       </header>
